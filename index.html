@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+
+  <script type="module" src="/main.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Beat Machine</h1>
+    <div class="btnWrapper">
+      <button id="playBtn">Play</button>
+      <button id="clearBtn">Clear</button>
+      <div>
+        <label for="barsInput">Bars Length</label>
+        <input id="barsInput" type="number" value="16" min="8" max="32" step="4">
+      </div>
+      <div>
+        <label for="bpmInput">BPM</label>
+        <input id="bpmInput" type="number" value="120" min="40" max="320">
+      </div>
+    </div>
+    <div id="beatMachine" class="beatMachine">
+      <div id="kick" class="track"></div>
+      <div id="snare" class="track"></div>
+      <div id="clap" class="track"></div>
+      <div id="hat" class="track"></div>
+    </div>
+    <p>1 lie and 1 truth: David Guetta, Marshmello, and DJ Mustard all use this beat machine to produce professionally; this took me far too long to make.</p>
+    <footer>
+      <p>made by a.c.</p>
+    </footer>
+  </div>
+</body>
+
+
+</html>
